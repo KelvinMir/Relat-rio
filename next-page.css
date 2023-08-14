@@ -1,0 +1,140 @@
+/* next-page.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+}
+
+/* Estilos para o contêiner do formulário */
+.box {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+
+/* Estilos para o título do formulário */
+.box h1 {
+    text-align: center;
+}
+/*Estilo para borda do Formulário de atividades*/
+fieldset{
+    border: 3px solid dodgerblue;
+}
+/*Estilo para legenda Formulário de atividades*/
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+#usuario {
+    font-size: 20px;
+    padding: 15px;  
+
+}
+#Datadia {
+    font-size: 18px;
+    padding: 15px; 
+    
+}
+/* Estilos para os campos de entrada */
+.inputBox {
+    position: relative;
+    font-size: 20px;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+/* Estilos para os rótulos dos campos de entrada */
+.labelInput {
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+    padding: 2px 5px;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+/* Estilos para o botão de registro de data */
+.botao {
+    display: inline-block;
+    margin: 1.5em;
+    border: 0;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #FFF;
+    background: #F60;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    border-radius: 0.5em;
+    box-shadow: 3px 3px 0 3px #930;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: 190px;
+}
+
+.botao:active {
+    box-shadow: 0 0 0 0 #930,
+    inset 4px 4px 4px #930;
+    transform: translate(6px, 6px);
+}
+
+.botao:hover {
+    background-color: 0 0 0 0 #930;
+}
+
+
+#nomeUsuario{
+    color: white;
+}
+.nome_usuario{
+    padding: 10px;
+    font-size: large;
+}
+
+#imagemUsuario{
+    width: 80px;
+}
+/*Centraliza o mês*/
+#mes-atual{
+    text-align: center;
+    font-size: 27px;
+}
+#Privilegio {
+    font-size: 18px;
+}
+
+/* Estilos para dispositivos móveis (telas com largura menor que 768px) */
+@media screen and (max-width: 768px) {
+    .box {
+        max-width: 100%;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+}

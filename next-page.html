@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Relatório</title>
+    <link rel="stylesheet" href="next-page.css">
+    <style>
+        
+        
+    </style>
+</head>
+<body onload="">
+    <div class="box">
+        
+        <!--Jogar do outro script aqui-->
+
+       <form action="https://api.sheetmonkey.io/form/4uSSZS4oA8Y5FTE8SpHzF2" method="post">
+           <fieldset>
+               <div class="inputBox">
+                   <b><p id="mes-atual"></p></b>
+                 </div>
+                 
+               <legend><b>Fórmulário de Atividades</b></legend>
+                                    <br>
+                    <!-- Input para exibir o nome do Publicador -->
+                
+                <div id="usuario"><p>Bem vindo</p><span id="nomeUsuario"></span></div>
+                
+                                <br><br><br>
+                
+                
+                <div> <span id="Datadia"></span></div>
+                                    
+                <br><br>
+                    <!------------------------------------------------>
+                    <!--label for="data"><b>Data:</b></label>
+                    <input type="date" name="Data" id="data" required>
+                    <br><br><br-->
+                    <!------------------------------------------------>
+               <div class="inputBox">     
+                   <input type="number" name="Publicações" id="publicacoes" class="inputUser" required>
+                   <label for="publicacoes" class="labelInput">Publicações</label>
+               </div>
+                                    <br><br>
+
+               <div class="inputBox">
+                   <input type="number" name="Vídeos Mostrados" id="videosmostrados" class="inputUser" required>
+                   <label for="videosmostrados" class="labelInput">Vídeos Mostrados</label>
+               </div>
+                                    <br><br>
+               <div class="inputBox">
+                   <input type="number" name="Horas" id="horas" class="inputUser" required>
+                   <label for="horas" class="labelInput">Horas</label>
+               </div>
+                                    <br><br>
+               <div class="inputBox">
+                   <input type="number" name="Revisitas" id="revisitas" class="inputUser" required>
+                   <label for="revisitas" class="labelInput">Revisitas</label>
+               </div>
+                                    <br><br>
+               <div class="inputBox">
+                   <input type="number" name="Estudos" id="estudos" class="inputUser" required>
+                   <label for="estudos" class="labelInput">Estudos</label>
+               </div>
+                                    <br><br>
+               <div class="inputBox">
+                   <input type="text" name="Observações" id="observacoes" class="inputUser" >
+                   <label for="observacoes" class="labelInput">Observações</label>
+               </div>
+                                    <br>
+                    <input type="radio" id="Pioneiro Auxiliar" name="Privilégio" value="Pioneiro Auxiliar">
+                    <label for="Pioneiro Auxiliar" id="Privilegio">Pioneiro Auxiliar</label>
+                                    <br>
+                    <input type="radio" id="Pioneiro Regular" name="Privilégio" value="Pioneiro Regular">
+                    <label for="pioneiro Regular" id="Privilegio">Pioneiro Regular</label>
+                                    <br><br>
+                    <!---------------Botão------------------------------->
+                    <input name="submit" id="submit" class="botao" type="submit">
+           </fieldset>
+       </form>
+   </div>
+    <script src="login/login.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
